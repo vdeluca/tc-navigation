@@ -21,4 +21,7 @@ cp var/etc/map_generator.ini.default var/etc/map_generator.ini
 
 python -m maps_generator --countries="Argentina_Pampas" --skip="Coastline"
 
+# Tambien se puede usar asi
+python -m maps_generator --countries="Argentina_*" --skip="Coastline"
+
 ```

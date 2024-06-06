@@ -30,28 +30,20 @@
         android:id="@+id/version"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:layout_marginBottom="@dimen/margin_half"
+        android:gravity="center_horizontal"
         android:selectAllOnFocus="true"
         android:textAppearance="@style/MwmTextAppearance.Body3"
         android:textIsSelectable="true"
-        tools:text="2021.10.15-15-Google" />
+        tools:text="1.0.1" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/margin_base"
-        android:text="@string/about_headline"
+        android:text="@string/about_headline_tc"
         android:textAlignment="center"
         android:textAppearance="@style/MwmTextAppearance.Headline"
-        android:textColor="?android:textColorPrimary" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/margin_half"
-        android:text="@string/about_tranqueras_conectadas"
-        android:textAppearance="@style/MwmTextAppearance.Body1"
         android:textColor="?android:textColorPrimary" />
 
     <TextView
@@ -65,12 +57,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
-    <TextView
-      android:id="@+id/faq"
-      style="@style/MwmWidget.TextView.Item"
-      android:text="@string/faq"
-      app:drawableStartCompat="@drawable/ic_question_mark" />
 
     <TextView
         android:id="@+id/rate"
@@ -89,12 +75,6 @@
         style="@style/MwmWidget.TextView.Item"
         android:text="@string/email"
         app:drawableStartCompat="@drawable/ic_email" />
-
-    <TextView
-        android:id="@+id/twitter"
-        style="@style/MwmWidget.TextView.Item"
-        android:text="@string/twitter"
-        app:drawableStartCompat="@drawable/ic_twitterx" />
 
     <View
         android:layout_width="match_parent"

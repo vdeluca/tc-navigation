@@ -2131,4 +2131,5 @@
 	<string name="type.amenity.events_venue">Lugar para eventos</string>
 	<string name="type.shop.auction">Subasta</string>
 	<string name="type.shop.collector">Coleccionables</string>
+	<string name="about_tranqueras_conectadas">Tranqueras Conectadas Navigation es un desarrollo basado en Organic Maps</string>
 </resources>

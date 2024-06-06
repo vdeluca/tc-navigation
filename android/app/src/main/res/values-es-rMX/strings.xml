@@ -557,4 +557,6 @@
 	<string name="type.piste_type.hike">Ruta de senderismo en la nieve</string>
 	<string name="type.piste_type.connection">Conexión de pista</string>
 	<string name="type.piste_type.skitour">Sendero de esquí</string>
+	<string name="about_tranqueras_conectadas">Tranqueras Conectadas Navigation es un desarrollo basado en Organic Maps</string>
+
 </resources>

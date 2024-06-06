@@ -2201,4 +2201,5 @@
 	<string name="type.amenity.events_venue">Events Venue</string>
 	<string name="type.shop.auction">Auction</string>
 	<string name="type.shop.collector">Collectables</string>
+    <string name="about_tranqueras_conectadas">Tranqueras Conectadas Navigation is powered by Organic Maps</string>
 </resources>

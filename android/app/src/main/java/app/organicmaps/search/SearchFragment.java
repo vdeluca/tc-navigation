@@ -45,6 +45,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import android.widget.Button;
+import android.widget.EditText;
+
 public class SearchFragment extends BaseMwmFragment
                          implements NativeSearchListener,
                                     CategoriesAdapter.CategoriesUiListener
@@ -58,6 +61,9 @@ public class SearchFragment extends BaseMwmFragment
     double lat;
     double lon;
     boolean valid;
+
+    private EditText mSearchInput;
+    private Button mSearchButton;
 
     public void set(double lat, double lon)
     {
@@ -251,6 +257,20 @@ public class SearchFragment extends BaseMwmFragment
   public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
   {
     super.onViewCreated(view, savedInstanceState);
+
+    // Inicializamos los nuevos elementos de búsqueda
+    mSearchInput = view.findViewById(R.id.search_input);
+    mSearchButton = view.findViewById(R.id.search_button);
+
+    mSearchButton.setOnClickListener(v -> {
+      String query = mSearchInput.getText().toString();
+      if (!TextUtils.isEmpty(query)) {
+        mToolbarController.setQuery(query, false);
+        runSearch();
+      }
+    });
+
+
     mSearchAdapter = new SearchAdapter(this);
     readArguments();
 

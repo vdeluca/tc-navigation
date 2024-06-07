@@ -2204,4 +2204,6 @@
     <string name="about_tranqueras_conectadas">Tranqueras Conectadas Navigation is powered by Organic Maps</string>
 	<string name="app_tc_name">Tranqueras Driver</string>
 	<string name="about_headline_tc">Conectados offline</string>
+    <string name="search_hint">Buscar</string>
+	<string name="search_button_text">tranquera</string>
 </resources>

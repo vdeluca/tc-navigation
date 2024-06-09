@@ -509,7 +509,7 @@
 	<string name="editor_more_about_osm">Más acerca de OpenStreetMap</string>
 	<string name="editor_operator">Operador</string>
 	<string name="editor_category_unsuitable_title">¿No halla una categoría adecuada?</string>
-	<string name="editor_category_unsuitable_text">Tranqueras Conectadas permite añadir únicamente categorías de puntos sencillos, es decir, no ciudades, carreteras, lagos, contornos de edificios, etc. Por favor, añada dichas categorías directamente a <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulte nuestra <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guía</a> para obtener instrucciones detalladas paso a paso.</string>
+	<string name="editor_category_unsuitable_text">Tranqueras Conectadas permite añadir únicamente categorías de puntos sencillos, es decir, no ciudades, carreteras, lagos, contornos de edificios, etc. Por favor, añada dichas categorías directamente a <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulte nuestra <a href="#">guía</a> para obtener instrucciones detalladas paso a paso.</string>
 	<string name="downloader_no_downloaded_maps_title">No ha descargado ningún mapa</string>
 	<string name="downloader_no_downloaded_maps_message">Descargue mapas para encontrar la ubicación y navegar sin conexión.</string>
 	<!-- abbreviation for meters -->
@@ -765,7 +765,7 @@
 	<!-- OpenStreetMap text on splash screen -->
 	<string name="splash_subtitle">Datos de mapas de OpenStreetMap</string>
 	<!-- Translated Tranqueras Conectadas site, add new translations here: https://github.com/organicmaps/organicmaps.github.io/tree/master/content -->
-	<string name="translated_om_site_url">https://organicmaps.app/es/</string>
+	<string name="translated_om_site_url">https://tranquerasconectadas.com.ar/</string>
 	<!-- Link to OSM wiki for Editor, Profile and About pages -->
 	<string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/ES:Acerca_de_OpenStreetMap</string>
 	<!-- App Tip #00 -->

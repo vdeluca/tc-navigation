@@ -56,15 +56,14 @@ public class SearchFragment extends BaseMwmFragment
   @NonNull
   private final List<HiddenCommand> mHiddenCommands = new ArrayList<>();
 
+  private EditText mSearchInput;
+  private Button mSearchButton;
+
   private static class LastPosition
   {
     double lat;
     double lon;
     boolean valid;
-
-    private EditText mSearchInput;
-    private Button mSearchButton;
-
     public void set(double lat, double lon)
     {
       this.lat = lat;

@@ -242,10 +242,10 @@ android {
 
   signingConfigs {
     debug {
-      storeFile file('debug.keystore')
-      storePassword '12345678'
-      keyAlias 'debug'
-      keyPassword '12345678'
+      storeFile file('./../../keys/upload_keystore.jks')
+      storePassword 'Particulares30#'
+      keyAlias 'upload_key'
+      keyPassword '13:0B:03:BC:CB:AD:BC:C7:8C:43:0B:8D:62:95:59:46:03:C6:A8:0C:2A:AC:6D:B6:83:61:0B:40:FE:86:87:B1'
     }
 
     release {
@@ -262,10 +262,12 @@ android {
       versionNameSuffix '-debug'
       jniDebuggable true           // Enable jni debug build
       zipAlignEnabled true
-      signingConfig signingConfigs.debug
+      signingConfig signingConfigs.release
       resValue 'string', 'app_name', 'Debug Tranqueras Conectadas'
       // Do not generate separate debug symbols for debug apps, because we don't distribute them.
       ndk.debugSymbolLevel = 'none'
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
       if (googleFirebaseServicesEnabled) {
         // Keep debug symbols for test lab.

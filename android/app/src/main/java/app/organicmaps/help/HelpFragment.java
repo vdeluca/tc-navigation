@@ -24,7 +24,6 @@ import app.organicmaps.util.Utils;
 
 public class HelpFragment extends BaseMwmFragment implements View.OnClickListener
 {
-  private String mDonateUrl;
 
   private TextView setupItem(@IdRes int id, boolean tint, @NonNull View frame)
   {
@@ -38,7 +37,6 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
   @Override
   public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
   {
-    mDonateUrl = Config.getDonateUrl(requireContext());
     View root = inflater.inflate(R.layout.about, container, false);
 
     ((TextView) root.findViewById(R.id.version))
@@ -57,11 +55,10 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
     else
       setupItem(R.id.rate, true, root);
 
-    setupItem(R.id.copyright, false, root);
     View termOfUseView = root.findViewById(R.id.term_of_use_link);
     View privacyPolicyView = root.findViewById(R.id.privacy_policy);
-    termOfUseView.setOnClickListener(v -> Utils.openUrl(requireActivity(), getResources().getString(R.string.translated_om_site_url) + "terms/"));
-    privacyPolicyView.setOnClickListener(v -> Utils.openUrl(requireActivity(), getResources().getString(R.string.translated_om_site_url) + "privacy/"));
+    termOfUseView.setOnClickListener(v -> Utils.openUrl(requireActivity(), "https://munigis.ar/tyc/"));
+    privacyPolicyView.setOnClickListener(v -> Utils.openUrl(requireActivity(), "https://munigis.ar/policy/"));
 
     return root;
   }
@@ -74,7 +71,5 @@ public class HelpFragment extends BaseMwmFragment implements View.OnClickListene
       Utils.openUrl(requireActivity(), getResources().getString(R.string.translated_om_site_url));
     else if (id == R.id.rate)
       Utils.openAppInMarket(requireActivity(), BuildConfig.REVIEW_URL);
-    else if (id == R.id.copyright)
-      ((HelpActivity) requireActivity()).stackFragment(CopyrightFragment.class, getString(R.string.copyright), null);
   }
 }

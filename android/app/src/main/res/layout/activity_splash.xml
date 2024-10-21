@@ -36,11 +36,12 @@
         android:id="@+id/tv__splash_subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/splash_subtitle"
         android:layout_marginStart="@dimen/margin_double"
         android:layout_marginEnd="@dimen/margin_double"
         android:gravity="center_horizontal"
-        android:textAppearance="@style/MwmTextAppearance.Toolbar" />
+        android:text="@string/splash_subtitle"
+        android:textAppearance="@style/MwmTextAppearance.Toolbar"
+        android:visibility="invisible" />
 
   </LinearLayout>
 
